@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando</title>
+    <style>
+        input{
+            width: 40px;
+            font: normal 18pt verdana;
+        }
+        button{
+            font: normal 18pt verdana;
+            background-color: chartreuse;
+        }
+        div#R{
+            font: normal 15pt verdana;
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="number" id="n1"> +
+    <input type="number" id="n2">
+    <button id="somar">Somar </button> 
+    <div ID="R">RESULTADO=</div> 
+
+    <script>
+        var bot= window.document.getElementById('somar')
+        var resultado= window.document.getElementById('R')
+        bot.addEventListener('click', soma)
+        bot.style.cursor= 'pointer'
+        function soma(){
+            var tx1= window.document.getElementById('n1')
+            var tx2= window.document.getElementById('n2')
+            var n1= Number(tx1.value)
+            var n2= Number(tx2.value)
+            var s= n1 + n2
+            resultado.innerHTML= `RESULTADO= <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>

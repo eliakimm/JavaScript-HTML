@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste DOM</title>
+    <style>
+        body{
+            background-color: aqua;
+            font: normal 16pt 'verdana';
+            color: black;
+            h1{
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando DOM: </h1>
+    <p id="msg1">Olha só...</p>
+    <p>Tem outro.</p>
+    <div id='msg'>Olha isso!</div>
+    <script>
+        /*window.document.write('Olá mundo</br>')
+        var teste= window.document.getElementsByTagName('p')[0]
+        window.document.write(`vai repetir a frase: `+ teste.innerText)
+        var corpo= window.document.body
+        var teste_id= window.document.getElementById('msg')
+        window.document.write(teste_id.innerText)
+        corpo.style.backgroundColor= 'white'
+        corpo.style.textAlign= 'center'*/
+        var teste= window.document.querySelector('div#msg')
+        var teste2= window.document.getElementById('msg1')
+        teste.innerText= 'isso tambem foi alterado.'
+        teste2.innerText= 'isso foi alterado.'
+    </script>
+
+</body>
+</html>

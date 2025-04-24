@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(125, 195, 242);
+    font: normal 16pt "verdana";
+    
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+section{
+    font: normal 11pt verdana;
+    background-color: white;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px;
+}
+
+input{
+    border-radius: 15px;
+}
+
+select{
+    text-align: center;
+    border-radius: 15px;
+    width: 100px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-style: italic;
+}

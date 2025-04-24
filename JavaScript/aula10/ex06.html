@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 16pt verdana;
+            color: rgb(1, 6, 11);
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+                }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Começando...
+    </div>
+    <script>
+        var a= window.document.getElementById('area')
+        a.addEventListener('click', clique) 
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+
+        function clique(){
+            a.style.cursor= 'pointer'
+            a.style.background= 'red'
+            a.innerText= 'CLICK'
+        }
+        function entrar(){
+            a.style.cursor= 'pointer'
+            a.style.background= 'green'
+            a.innerText= 'ENTROU'
+        }
+        function sair(){
+            a.style.background='aqua'
+            a.innerText= 'Começando...'
+            a.style.cursor= 'auto'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    font: normal 15pt verdana;
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+section{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow:3px 3px 10px black ;
+}
+
+div{
+    text-align: center;
+    padding: 15px;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+}

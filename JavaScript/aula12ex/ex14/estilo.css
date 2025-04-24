@@ -1,0 +1,40 @@
+body{
+    font: normal 16pt verdana;
+    background-color: rgb(134, 228, 228);
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+section{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow:3px 3px 10px black ;
+}
+
+div{
+    font: normal 16pt verdana;
+}
+
+input#idade{
+    border-radius: 15px;
+    box-shadow: 50px, black;
+    width: 50px;
+}
+
+input#verificar{
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+footer{
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
