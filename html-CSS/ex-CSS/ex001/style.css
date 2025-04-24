@@ -1,0 +1,30 @@
+body {background-color: whitesmoke;}
+h1{background-color: black;
+    text-align: center;
+    color: blue;}
+body {padding: 20px;}
+p{color: red;}
+
+/*calasses e id's */
+
+.meu-paragrafo {
+    border-bottom: 2px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: aqua;
+}
+#Titulo {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+}
+/* Elementos da pagina*/
+
+* {
+    
+    font-family: 'Times New Roman', Times, serif;}
+
+p, h1 {border-bottom: 2px;} 
+
+.nome-da-cor {color: red;}
+.hexa {color: #324597;}
+.rgb {color: rgb(, rgb(82, 92, 82), rgb(75, 75, 90));}
