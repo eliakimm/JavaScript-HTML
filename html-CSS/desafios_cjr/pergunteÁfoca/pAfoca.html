@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunte à foca</title>
+</head>
+<body>
+    <h1>Pergunte à foca:</h1>
+    <section>
+        <div>
+            <img width="300" src="https://drive.google.com/thumbnail?id=1joU_tBXgikD_hhcfQJJz6pAt49C9n2z3" alt="foca">
+            <p>
+                I.<input type="text" id="ent1"> ou II.<input type="text" id="ent2">
+            </p>
+            <P><input type="button" value="Perguntar" onclick="escolher()" style="cursor: pointer;"></P>
+        </div>
+        <div id="res">
+            A foca vai escolher...
+        </div>
+    </section>
+    <footer><p>&copy; __eliakim__</p></footer>
+    <script>
+        var ent1= window.document.getElementById("ent1")
+        var ent2= window.document.getElementById("ent2")
+        var res= window.document.getElementById("res")
+
+        function escolher(){
+            var escolha= Math.floor(Math.random() * 10);
+
+            if(ent1.value.length == 0 || ent2.value.length == 0)
+                alert(`[ERRO] Preencha os campos .I e .II !!!`)
+            else
+                if(escolha%2){
+                    alert(`A foca escolheu: ${ent1.value}`)
+                    res.innerHTML= `A foca escolheu: <strong>${ent1.value}</strong>`}
+                else{
+                    alert(`A foca escolheu: ${ent2.value}`)
+                    res.innerHTML= `A foca escolheu: <strong>${ent2.value}</strong>`}
+                
+                ent1.value= ''
+                ent2.value= ''}
+    </script>
+     <style>
+        body{
+            background-color: rgb(125, 195, 242);
+            font: normal 16pt "verdana";
+            text-align: center;
+            color: white;
+    
+        }
+
+        section{
+            font: normal 11pt verdana;
+            background-color: white;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px;
+            color: black;
+            text-align: center;
+        }
+
+
+        input{
+            border-radius: 15px;
+        }
+
+        footer{
+            text-align: center;
+        }
+
+    </style>
+</body>
+</html>
