@@ -1,3 +1,3 @@
 # JavaScript
 
-Exercicíos de JavaScript e HTML/CSS.
+Exercícios de JavaScript e HTML/CSS.
